@@ -1,10 +1,10 @@
-FROM ruby:2.3.0
+FROM ruby:2.6.3
 RUN apt-get update -qq && \
     apt-get install -y apt-utils \
                        build-essential \
                        libpq-dev \
                        nodejs \
-                       mysql-client
+                       default-mysql-client
 RUN mkdir /app
 WORKDIR /app
 ADD Gemfile /app/Gemfile
