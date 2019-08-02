@@ -1,4 +1,4 @@
-FROM nginx:1.11
+FROM nginx:1.16
 RUN apt-get update && \
     apt-get install -y apt-utils \
                        locales && \
